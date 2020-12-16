@@ -39,7 +39,7 @@ This code shows how I used bootstrap's card component to format each of my about
 
 ## Authors
 Austin Woo
-- [Link to Portfolio Site]()
+- [Link to Portfolio Site](https://austinwoo123.github.io/Responsive-Portfolio/.)
 - [Link to Github](https://github.com/austinwoo123)
 - [Link to LinkedIn](https://www.linkedin.com/in/awoo95/)
 
