@@ -2,70 +2,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <!--Bootstrap CSS--> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Austin Woo</title>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Austin Woo</title>
+
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand navbar-color" href="#">Austin Woo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand navbar-color" href="index.html">Austin Woo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav navlinks">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
 
-  <header>
-    <div class="container">
-      <!-- <div class="row">
-        <div class="col-md-8">
-          <div class="page-header"> -->
-            <h1 class="display-1">About Me</h1>
-            <div class="row">
-  </header>
-
-            <div class="col-7">
-              <img class="img-fluid" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA51BMVEX///9EWmRUbnp4j5uPo631pVf1tnP8/PxMZG/1rmZ3jpuAlqFieoZZb3lNaXZyipc9VF/7qFaJlJqKn6qVoqn7uXM7V2T1s2z1olGfjXeZe1+Qm6D98uhFY3DK09e/yc7n6+3W3eD759Px9PU0Tlm2wsiuuL3638X41LD3yJf0n0j3wY/++fT0sWf52rv1uHh0g4qbrbWosLT2wIf4zqT64sv51rT2u4P87d/1qV3d5OnPpX28kmuvh2IlSVlqdHVWYWTTmV/FkF52eXSGdWFufYSoloFnZmKbg26voI60m4LInHDkx6olqtkkAAAKjUlEQVR4nO2di3baRhCGJWOxNgaEg2No6gsOGNuAE5Nbgxs3SS9penn/5ynovtKstNL+QlpO/+QUOKbKfJ7V7OxoNTKMbYl9vLm9m79trg6bdx/eL7b2725Ji5u7wf1g0Gw2Dy3LGg5ns+btWdVGqYjxHxe3zQ2cow2ho+FwrgnjmoYx98X/HLy479+HfBHCNePslv8q847AIp9jv6zti4WEzh/mmhb5wO7um02S0LJmg4URfpX5bIxx/6mc0OFjMUL3Z+u/i/mgKSS0hodn/iGcgwTeMwIvVk7o/uLdF+9DdLwu3vKAMUIHMSA0gv/NH581IDRCQsPzGvM9u/nBXQwwTmgNB97vhwU+9N4b9RilGbq5b2YQWsO7qo1U0SLuQYLQmn2s2kwFvZMhHP5UtZnFdZYEJAit2cuqDS2sWznC4bxqQ4uKvU4CUoSWpWse/jIRSAWEs1dVm1pQ1CAlCbUdpnMCkB6lq6pNLSgKkCacVW1qMZ1Rp6GAUM/54iV1GgoIb6o2tpDeyxMO9QymNzkI31VtbCF9yEGo53RBpN1CQj2Tb3LC3ynC3R+lr3Y+0uSYDzWdLT7myGn0nPEXOQg1LdVQC+CdyryTtVIh4aBqUwuKTNvIFfBt1aYWFFVqo6sYmp6GhvFWkvCw5pV7sag5n6om6lvXX8j5cKjtIJWt6r+u2kwFEbGGuDLzvmozVZScEpOEuk6GrpJOTBBqWmcLlDgTE9eA9Vz8hlrEk9MEoSabasSKrxJjhLMPVRuornepu010H6OO+P0mHOFwpW2+FtXi9UBIqP1J6OrstYhQ43SNVxTxcBcBDWN+TxHqWSSlNR8eJghXmpaBac2H1mrAEa5Wuha6aa0JLY/RIVw5gXSHCB9/HnqeOxwcenyWdfzpomrDQBotzz8dW0kdP/3y7Kpq4wB6PDnv7n22kojHqy9mb/KguR/ZRWPNt7fX/fz1mGc8tn79cmqaa8bOdFy1mYXFpu3uhm+j7m+fVsehvj45fI4m5omejKOTcx/PZezu/fb96enpxdPvX05PAz7TceSDfidknM+n7J7H6DRlHC/3CD5HB0k8n/GxarPldS3kExNuGE80WS2O7HMhXxrhOuYclDVUvRsdMLroiB2YQbj24xRmhxGBgo6Ny1S+LEJzcoIyhHMa0IeXaSNUghCIyDkRRniR4cFsQnMCGqhRJtwoHbfVCU1zBLGFI4TdyPgmE1CCsPcAscWInYoQjTP5pHw4GYHs4c5DyBGvs8KMHGEPEmw4KNQobWQPUhlC00QYE480CEImAShFOMFkqNyUDxmmVxKDVI7wGmANj4Q5D5coH2KiaWyYIhAfUIRmB2DNRj4VaD6UmSskCXsjdXPimTeAUOo0lCOcXKqbU0LmPZUZpJI+/FHdnBJSmh+BhIhQg1z0ugdsywDKEZqmen2xmqRUmhCSmnLrQ0CkkQs0soTqoSYWaACE11KnoSRh742yPVG5jVdUdQIlhK0RXUFmCxtJCFheMMzQjEiKT5pwgjQNk5eO5QKNNKFybTgKBcnaJEOpNKFyMOWoED7MqgTnJFQPphwUItBIhlJpQnwwVT2ETI0mB6F5AGBi9IeCkstK5Q" alt="Picture of Me">
-              </div>
-            
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-header">About Me</h1>
+            <img class="img img-thumbnail" src="http://placehold.it/200x200" alt="Picture of Me">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt dolor vel bibendum imperdiet.
+              Etiam pulvinar mattis erat, vitae porta leo sollicitudin eu. Morbi sed cursus sapien. Mauris semper dolor
+              a massa venenatis, lacinia consectetur sem condimentum. Duis eget lacus mollis, rutrum elit et, lobortis
+              quam. Morbi eu lectus purus. Fusce tortor tellus, maximus molestie fermentum ut, scelerisque vitae felis.
+              Phasellus tincidunt faucibus pharetra. Quisque quis neque diam. Ut id libero semper, facilisis enim id,
+              ullamcorper neque. Donec ipsum justo, dictum in laoreet et, laoreet commodo sapien. Sed imperdiet, odio
+              sed tristique finibus, ante tellus pretium eros, vitae porta odio dui a dui. Donec fringilla quam sit amet
+              congue tincidunt. Quisque eget blandit est.
+            </p>
           </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-<p class="col-5">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt dolor vel bibendum imperdiet. Etiam pulvinar mattis erat, vitae porta leo sollicitudin eu. Morbi sed cursus sapien. Mauris semper dolor a massa venenatis, lacinia consectetur sem condimentum. Duis eget lacus mollis, rutrum elit et, lobortis quam. Morbi eu lectus purus. Fusce tortor tellus, maximus molestie fermentum ut, scelerisque vitae felis. Phasellus tincidunt faucibus pharetra. Quisque quis neque diam. Ut id libero semper, facilisis enim id, ullamcorper neque. Donec ipsum justo, dictum in laoreet et, laoreet commodo sapien. Sed imperdiet, odio sed tristique finibus, ante tellus pretium eros, vitae porta odio dui a dui. Donec fringilla quam sit amet congue tincidunt. Quisque eget blandit est. 
-</p>
-  
+  <footer>
+    <div class="row fixed-bottom">
+      <footer class="col-sm-12 min-vw-100 mx-auto py-4 bg-dark">
+        <h4 class="text-center text-light pt-2" style="font-size: 70%; font-family: 'Martel Sans', sans-serif;">&copy
+          Copyright</h4>
+    </div>
+  </footer>
 
 
-</header>  
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
